@@ -38,3 +38,20 @@ To stop streaming:
 /etc/init.d/mjpg-streamer stop
 `
 
+## USB over IP tunnel
+`
+opkg install http://downloads.lede-project.org/releases/17.01.1/targets/ramips/mt7688/packages/kmod-usbip-client_4.4.61-1_mipsel_24kc.ipk
+
+opkg install http://downloads.lede-project.org/releases/17.01.1/targets/ramips/mt7688/packages/kmod-usbip-server_4.4.61-1_mipsel_24kc.ipk
+
+opkg install http://downloads.lede-project.org/releases/17.01.1/targets/ramips/mt7688/packages/kmod-usbip_4.4.61-1_mipsel_24kc.ipk
+`
+
+## Debugging utils
+`
+opkg print-architecture
+uname -a
+`
+## Reference
+
+* https://downloads.lede-project.org/releases/17.01.1/targets/ramips/mt7688/packages/
